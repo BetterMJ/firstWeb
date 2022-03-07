@@ -112,8 +112,8 @@
     @media screen and (max-width: 600px){
       .container{
         display: grid;
-        grid-template-columns: 200px, 200px, 200px;
-        grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 0.5fr 1fr 2fr 1fr 0.5fr;
         grid-auto-flow: row; 
         grid-template-areas:
         "Header Header Header"
