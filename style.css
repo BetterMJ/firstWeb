@@ -1,0 +1,134 @@
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 500px 120px;
+    gap: 30px 30px;
+    margin: 0px 50px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Header Nav Nav Nav"
+      "Section Section Section Aside"
+      "Footer Footer Footer Footer";
+  }
+  
+  .Header { grid-area: Header; 
+    text-align: center;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    border: 3px solid black;
+    margin: 30px 0px 0px 0px;
+}
+  
+  .Nav { grid-area: Nav; 
+    text-align: center;
+    background-color: orange;
+    border-radius: 20px;
+    border: 3px solid black;
+    margin: 30px 0px 0px 0px;
+  }
+  
+  .Section {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.1fr 1fr 1fr 1fr; 
+    grid-auto-flow: row;
+    grid-template-areas:
+    "section-title section-title section-title"
+    "section-header section-header section-header"
+    "section-article section-article section-article"
+    "section-footer section-footer section-footer"; 
+    grid-area: Section;
+    border-radius: 20px;
+    border: 3px solid black;
+    background-color: red;
+  }
+  
+  .section-header { 
+      grid-area: section-header; 
+      margin: 10px;
+      background-color: blue;
+      border-radius: 20px;
+      border: 3px solid black;
+      text-align: center;
+    }
+  
+  .section-article { 
+    grid-area: section-article; 
+    margin: 10px;
+    background-color: blue;
+    border-radius: 20px;
+    border: 3px solid black;
+    text-align: center;
+  }
+  
+  .section-footer { 
+    grid-area: section-footer; 
+    margin: 10px;
+    background-color: blue;
+    border-radius: 20px;
+    border: 3px solid black;
+    text-align: center;
+  }
+  
+  .Aside { grid-area: Aside;
+    text-align: center; 
+    background-color: chocolate;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+.Aside p{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+}
+  
+  .Footer {
+     grid-area: Footer; 
+     text-align: center;
+     font-size: small;
+     color: gray;
+     background-color: darkgray;
+     border-radius: 20px;
+     border: 3px solid black;
+     list-style: none;
+     margin: 0px 0px 20px 0px;
+    }
+  .Footer li:hover{
+    color:white;
+  }
+  .Footer ul{
+    list-style: none;
+    text-align: center;
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif
+  }
+  .Footer p{
+    font-size: smaller;
+  }
+
+  .section-title { 
+      grid-area: section-title;
+      text-align: center;
+    }
+    @media screen and (max-width: 600px){
+      .container{
+        display: grid;
+        grid-template-columns: 200px, 200px, 200px;
+        grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+        grid-auto-flow: row; 
+        grid-template-areas:
+        "Header Header Header"
+        "Nav Nav Nav"
+        "Section Section Section"
+        "Aside Aside Aside"
+        "Footer Footer Footer";
+      }
+}
+.html{
+  font-size: 14px;
+  font-family:Arial, Helvetica, sans-serif
+}
+body{
+  background-image: url(https://cdn.pixabay.com/photo/2021/12/11/15/06/northern-lights-6862969_1280.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
